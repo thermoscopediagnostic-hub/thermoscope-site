@@ -2,12 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ThermoScope Diagnostics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #00537a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .service-box {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      flex: 1 1 calc(45% - 1rem);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .contact {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .contact a {
+      color: #00537a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      .service-box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to ThermoScope Diagnostics</h1>
-  <p>Specialized mobile thermographic inspections for RVs, solar, HVAC, and home diagnostics.</p>
-  <p>Contact us at: contact@thermoscope.xyz</p>
+  <header>
+    <h1>ThermoScope Diagnostics</h1>
+    <p>Thermal inspections — RVs and homes, appliances and more</p>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>We provide fast, mobile thermographic inspections for RVs, solar systems, roof leaks, appliances, and HVAC systems. Based in Christchurch, we come to you with high-resolution thermal imaging tools that detect what the eye can’t see.</p>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>RVs & Caravans</h3>
+        <p>Electrical, insulation, and appliance diagnostics inside mobile homes.</p>
+      </div>
+      <div class="service-box">
+        <h3>Solar Panels</h3>
+        <p>Detect hot spots, shading issues, and cell degradation without dismantling.</p>
+      </div>
+      <div class="service-box">
+        <h3>Roof Leaks</h3>
+        <p>Spot water ingress, dampness, or insulation loss through non-invasive scans.</p>
+      </div>
+      <div class="service-box">
+        <h3>HVAC & Appliances</h3>
+        <p>Check for performance faults in heaters, fridges, water systems and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email us at <a href="mailto:thermoscope.diagnostic@gmail.com">thermoscope.diagnostic@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 ThermoScope Diagnostics. All rights reserved.
+  </footer>
 </body>
 </html>
